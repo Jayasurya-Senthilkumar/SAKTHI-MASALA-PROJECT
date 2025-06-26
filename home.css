@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar {
+  background: rgba(245, 228, 79, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+   font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style:oblique;
+  font-size: xx-large;
+  letter-spacing: 2px;
+}
+.container{
+  background-image: url(./img/bigg000.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position:top;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.space marquee{
+  letter-spacing: 10px;
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+  margin-top: 30px;
+}
+
+.nav-links a:hover {
+  color: #6a11cb;
+}
+.newsletter {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f9f9f9;
+}
+.newsletter-form {
+  margin-top: 15px;
+}
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  max-width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+.nav-links input[type=search]{
+  border-radius: 10px;
+  padding: 4px 4px 4px 4px;
+}
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.product-section {
+  background: #F2C078;
+  margin-bottom: 50px;
+
+}
+.space p{
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  font-size:xx-large;
+  transition-delay: 1s;
+  transition: width 2s, height 2s, transform 2s;
+}
+.space button{
+   background-color: white;
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ padding: 10px 15px 10px 10px;
+ cursor: pointer;
+ user-select: none;
+ border-radius: 10px;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ color: black;
+  transform: translate(0px,0%);
+ opacity: 1;
+ text-align: center;
+ margin-left: 680px;
+ margin-bottom: 10px;
+}
+.space a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.space button:hover{
+  color:#FED16A;
+  background-color: black;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize  ;
+}
+
+.price {
+  color: #6a11cb;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #000;
+}
+
+/* Footer */
+.footer {
+  background-color: #f0eeee;
+  padding: 40px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.footer-col h4 {
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+.footer-col ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  filter: grayscale(1);
+}
+.social-icons a img:hover {
+  filter: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .newsletter-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+.marquee h3{
+  margin-top: 20px;
+}
